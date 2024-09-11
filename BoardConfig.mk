@@ -134,19 +134,8 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
 TARGET_KERNEL_SOURCE := kernel/xiaomi/rova
-TARGET_KERNEL_CONFIG := \
-    vendor/msm8937-perf_defconfig \
-    vendor/msm8937-legacy.config \
-    vendor/common.config \
-    vendor/debugfs.config \
-    vendor/feature/android-12.config \
-    vendor/feature/exfat.config \
-    vendor/feature/ntfs.config \
-    vendor/feature/kprobes.config \
-    vendor/feature/lmkd.config \
-    vendor/feature/wireguard.config \
-    vendor/xiaomi/msm8937/common.config \
-    vendor/xiaomi/msm8937/mi8917.config
+TARGET_KERNEL_CONFIG := vendor/rvkernel-mi8917_defconfig
+
 ifneq ($(shell grep CONFIG_KSU_STATIC_HOOKS $(TARGET_KERNEL_SOURCE)/techpack/KernelSU/kernel/ksu.c || true),)
 TARGET_KERNEL_CONFIG += \
     vendor/feature/ksu_static_hooks.config
