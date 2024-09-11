@@ -4,8 +4,8 @@
       "Name": "CPUBigClusterMaxFreq",
       "Path": "/sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq",
       "Values": [
-        "1401000",
-        "1248000",
+        "1764400",
+        "1497600",
         "1094400",
         "960000"
       ],
@@ -16,8 +16,8 @@
       "Name": "CPUBigClusterMinFreq",
       "Path": "/sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq",
       "Values": [
-        "1401000",
-        "1248000",
+        "1764400",
+        "1497600",
         "1094400",
         "960000"
       ],
@@ -239,13 +239,13 @@
       "PowerHint": "VR",
       "Node": "CPUBigClusterMaxFreq",
       "Duration": 0,
-      "Value": "1248000"
+      "Value": "1497600"
     },
     {
       "PowerHint": "VR",
       "Node": "CPUBigClusterMinFreq",
       "Duration": 0,
-      "Value": "1248000"
+      "Value": "1497600"
     },
     {
       "PowerHint": "VR",
@@ -281,13 +281,13 @@
       "PowerHint": "VR_SUSTAINED_PERFORMANCE",
       "Node": "CPUBigClusterMaxFreq",
       "Duration": 0,
-      "Value": "1248000"
+      "Value": "1497600"
     },
     {
       "PowerHint": "VR_SUSTAINED_PERFORMANCE",
       "Node": "CPUBigClusterMinFreq",
       "Duration": 0,
-      "Value": "1248000"
+      "Value": "1497600"
     },
     {
       "PowerHint": "VR_SUSTAINED_PERFORMANCE",
@@ -311,13 +311,13 @@
       "PowerHint": "CAMERA_LAUNCH",
       "Node": "CPUBigClusterMaxFreq",
       "Duration": 1000,
-      "Value": "1401000"
+      "Value": "1764400"
     },
     {
       "PowerHint": "CAMERA_LAUNCH",
       "Node": "CPUBigClusterMinFreq",
       "Duration": 1000,
-      "Value": "1401000"
+      "Value": "1764400"
     },
     {
       "PowerHint": "CAMERA_LAUNCH",
@@ -329,13 +329,13 @@
       "PowerHint": "CAMERA_STREAMING_MID",
       "Node": "CPUBigClusterMaxFreq",
       "Duration": 0,
-      "Value": "1248000"
+      "Value": "1497600"
     },
     {
       "PowerHint": "CAMERA_STREAMING_HIGH",
       "Node": "CPUBigClusterMaxFreq",
       "Duration": 0,
-      "Value": "1248000"
+      "Value": "1497600"
     },
     {
       "PowerHint": "CAMERA_STREAMING_HIGH",
@@ -347,7 +347,7 @@
       "PowerHint": "AUDIO_LAUNCH",
       "Node": "CPUBigClusterMinFreq",
       "Duration": 2000,
-      "Value": "1248000"
+      "Value": "1497600"
     },
     {
       "PowerHint": "AUDIO_LAUNCH",
@@ -389,7 +389,7 @@
       "PowerHint": "Flipendo",
       "Node": "CPUBigClusterMaxFreq",
       "Duration": 0,
-      "Value": "1248000"
+      "Value": "1497600"
     },
     {
       "PowerHint": "INTERACTION",
