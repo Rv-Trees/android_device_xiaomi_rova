@@ -135,14 +135,6 @@ BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
 TARGET_KERNEL_SOURCE := kernel/xiaomi/rova
 TARGET_KERNEL_CONFIG := vendor/rvkernel-mi8917_defconfig
-
-ifneq ($(shell grep CONFIG_KSU_STATIC_HOOKS $(TARGET_KERNEL_SOURCE)/techpack/KernelSU/kernel/ksu.c || true),)
-TARGET_KERNEL_CONFIG += \
-    vendor/feature/ksu_static_hooks.config
-endif
-TARGET_KERNEL_CONFIG += \
-    vendor/feature/pocket-judge.config \
-    vendor/feature/net.config
 TARGET_KERNEL_VERSION := 4.19
 TARGET_KERNEL_ADDITIONAL_FLAGS := \
     LLVM=1
