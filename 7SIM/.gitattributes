@@ -1,5 +1,0 @@
-* text=auto eol=lf
-
-*.bat text eol=crlf
-*.jks binary
-*.jar binary
