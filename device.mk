@@ -175,11 +175,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fastbootd
 
-# FM
-PRODUCT_PACKAGES += \
-    RevampedFMRadio \
-    libqcomfmjni:64
-
 # Filesystem
 PRODUCT_PACKAGES += \
     e2fsck_ramdisk \
