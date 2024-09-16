@@ -79,48 +79,5 @@
                 android:name="com.android.settings.summary"
                 android:resource="@string/clear_speaker_summary" />
         </activity>
-
-        <activity
-            android:name=".smartcharging.SmartChargingActivity"
-            android:exported="true"
-            android:label="@string/smart_charging_title">
-            <intent-filter>
-                <action android:name="com.android.settings.action.IA_SETTINGS" />
-            </intent-filter>
-            <intent-filter>
-                <action android:name="com.android.settings.action.EXTRA_SETTINGS" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-            <meta-data
-                android:name="com.android.settings.category"
-                android:value="com.android.settings.category.ia.battery" />
-            <meta-data
-                android:name="com.android.settings.summary"
-                android:resource="@string/smart_charging_summary" />
-            <meta-data
-                android:name="com.android.settings.order"
-                android:value="5"/>
-        </activity>
-
-        <service android:name=".smartcharging.SmartChargingService"
-                android:exported="false">
-        </service>
-
-        <receiver
-            android:name=".smartcharging.SmartChargingReceiver"
-            android:exported="false">
-        </receiver>
-
-        <provider
-            android:name=".PartsSearchIndexablesProvider"
-            android:authorities="org.lineageos.settings"
-            android:multiprocess="false"
-            android:grantUriPermissions="true"
-            android:permission="android.permission.READ_SEARCH_INDEXABLES"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.content.action.SEARCH_INDEXABLES_PROVIDER" />
-            </intent-filter>
-        </provider>
     </application>
 </manifest>

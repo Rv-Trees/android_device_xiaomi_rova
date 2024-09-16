@@ -26,7 +26,6 @@ import dagger.hilt.android.AndroidEntryPoint;
 import javax.inject.Inject;
 
 import org.lineageos.settings.soundcontrol.SoundControl;
-import org.lineageos.settings.smartcharging.SmartChargingManager;
 
 import static org.lineageos.settings.BuildConfig.DEBUG;
 
@@ -38,9 +37,6 @@ public class BootCompletedReceiver extends Hilt_BootCompletedReceiver {
     SoundControl mSoundControl;
 
     @Inject
-    SmartChargingManager mSmartChargingManager;
-
-    @Inject
     DefaultSystemSettings mDefaultSystemSettings;
 
     @Override
@@ -48,7 +44,6 @@ public class BootCompletedReceiver extends Hilt_BootCompletedReceiver {
         super.onReceive(context, intent);
 
         mSoundControl.onBootCompleted();
-        mSmartChargingManager.onBootCompleted();
         mDefaultSystemSettings.onBootCompleted();
     }
 }
