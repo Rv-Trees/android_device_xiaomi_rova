@@ -112,9 +112,4 @@
     <string name="not_now">Not now</string>
     <string name="next_update_time">Next update at %1$s</string>
 
-    <!-- UiBench -->
-    <string name="uibench_title">UiBench</string>
-    <string name="jitter_test_title">Jitter</string>
-    <string name="jitter_test_summary">Calculate rendering jitter</string>
-
 </resources>
