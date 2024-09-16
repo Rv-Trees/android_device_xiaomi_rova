@@ -33,8 +33,6 @@ import dagger.hilt.components.SingletonComponent;
 
 import javax.inject.Singleton;
 
-import org.lineageos.settings.dirac.DiracSound;
-
 /** Application level module */
 @InstallIn(SingletonComponent.class)
 @Module
@@ -49,12 +47,6 @@ public final class PartsModule {
             final @ApplicationContext Context context) {
 
         return ContextCompat.getSystemService(context, MediaSessionManager.class);
-    }
-
-    @Provides
-    @Singleton
-    static DiracSound provideDiracSound() {
-        return new DiracSound(/*priority=*/ 0, /*audioSession=*/ 0);
     }
 
     @Provides

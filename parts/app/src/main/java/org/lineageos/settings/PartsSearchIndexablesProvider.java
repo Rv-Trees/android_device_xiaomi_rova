@@ -51,7 +51,6 @@ import static android.provider.SearchIndexablesContract.NON_INDEXABLES_KEYS_COLU
 import static android.provider.SearchIndexablesContract.COLUMN_INDEX_NON_INDEXABLE_KEYS_KEY_VALUE;
 
 import org.lineageos.settings.BuildConfig;
-import org.lineageos.settings.dirac.DiracActivity;
 import org.lineageos.settings.speaker.ClearSpeakerActivity;
 import org.lineageos.settings.smartcharging.SmartChargingActivity;
 import org.lineageos.settings.soundcontrol.SoundControlSettingsActivity;
@@ -66,8 +65,6 @@ public class PartsSearchIndexablesProvider extends SearchIndexablesProvider {
 
     static {
         final int rank = 1, iconResId = 0;
-        sResMap.add(new SearchIndexableResource(rank, R.xml.dirac_settings,
-                    DiracActivity.class.getName(), iconResId));
         sResMap.add(new SearchIndexableResource(rank, R.xml.clear_speaker_settings,
                     ClearSpeakerActivity.class.getName(), iconResId));
         sResMap.add(new SearchIndexableResource(rank, R.xml.smartcharging_settings,
