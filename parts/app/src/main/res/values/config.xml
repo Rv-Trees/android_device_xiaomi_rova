@@ -15,10 +15,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="dirac_key_main_switch" translatable="false">"dirac_enable"</string>
-    <string name="dirac_key_headset" translatable="false">"dirac_headset_pref"</string>
-    <string name="dirac_key_preset" translatable="false">"dirac_preset_pref"</string>
-
     <string name="smart_charging_prop_last_stop_charging_reason" translatable="false">"service.smartcharging.last_stop_charging_reason"</string>
     <string name="smart_charging_prop_next_battery_monitor_trigger_time" translatable="false">"service.smartcharging.next_battery_monitor_trigger_time"</string>
     <string name="smart_charging_prop_notification_dismissed" translatable="false">"service.smartcharging.notification_dismissed"</string>
