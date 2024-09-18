@@ -15,6 +15,17 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from rova device
 $(call inherit-product, device/xiaomi/rova/device.mk)
 
+# EverestOS Flags
+EVEREST_MAINTAINER := "Rve"
+TARGET_SUPPORTS_BLUR := false
+TARGET_HAS_UDFPS := false
+EXTRA_UDFPS_ANIMATIONS := false
+WITH_GAPPS := false
+TARGET_USES_BLUR_RECENT := false
+TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true
+TARGET_DEFAULT_PIXEL_LAUNCHER := false
+TARGET_PREBUILT_BCR := true
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := rova
 PRODUCT_NAME := lineage_rova
